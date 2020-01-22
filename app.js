@@ -3,18 +3,8 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-const Sequelize = require("sequelize");
-
-const db = new Sequelize("codegig", "postgres", "postgresdbpassword", {
-  host: "localhost",
-  dialect: "postgres",
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
-  }
-});
+//Database
+const db = require("./config/database");
 
 // Test DB
 db.authenticate()
