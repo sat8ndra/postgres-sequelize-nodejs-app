@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 
-module.exports = new Sequelize("codegig", "postgres", "xxxxxxxxxx", {
+module.exports = new Sequelize("codegig", "postgres", "xxxxxxxxx", {
   host: "localhost",
   dialect: "postgres",
   pool: {
